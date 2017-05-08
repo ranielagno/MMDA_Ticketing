@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpfromdoha.mmda_ticketing.MainActivity"
+    android:weightSum="1">
+<!--
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5">
+
+    </FrameLayout>
+-->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_scan"
+        android:text="Bluetooth Scan"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MMDA Ticketing App"
+        android:textSize="22dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="Date: "
+        android:textColor="#000000"
+        android:layout_weight="0.10" />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="Time: "
+        android:textColor="#000000"
+        android:layout_weight="0.10" />
+
+    <TextView
+        android:id="@+id/enforcer_id"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="Enforcer ID: "
+        android:textColor="#000000"
+        android:layout_weight="0.10"
+        />
+    <TextView
+        android:id="@+id/enforcer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="Enforcer Name: "
+        android:textColor="#000000"
+        android:layout_weight="0.20"
+        />
+    <TextView
+        android:id="@+id/driver_license"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="License No: "
+        android:textColor="#000000"
+        android:layout_weight="0.10"
+        />
+    <TextView
+        android:id="@+id/driver_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:text="Driver's Name: "
+        android:textColor="#000000"
+        android:layout_weight="0.20"
+        />
+
+    <TextView
+        android:id="@+id/car_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Plate Number: "
+        android:textColor="#000000"
+        android:layout_weight="0.10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Violation: "
+        android:textColor="#000000"
+        android:layout_weight="0.10"
+         />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:entries="@array/violation_array"
+        android:layout_weight="0.10"
+        />
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:layout_marginLeft="30dp"
+    android:text="Price: "
+    android:textColor="#000000"
+        android:id="@+id/penalty"
+        android:layout_weight="0.08" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/scan_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Scan" />
+
+        <Button
+            android:id="@+id/print_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Print" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
